@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.fy.fanying20190603.view.TitleSou
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/tite_sou"></com.fy.fanying20190603.view.TitleSou>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:visibility="visible"
+        android:id="@+id/recyc_view"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/liner_layout"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/shop_null"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="没有物品"/>
+
+    </LinearLayout>
+</LinearLayout>
